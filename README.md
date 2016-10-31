@@ -1,9 +1,3 @@
 # photo-album
 
-I am creating a responsive photo album app.
-
-When user clicks an image, the image zooms.
-
-I need to be able to add a nav inserted at the end of the image whenever its zoomed.
-
-Got the buttons to change picture (left goes left, right goes right), but after 1 use, it disappears.
+Created on Oct 31, 2016 as a simple photo album of cats. When the user clicks on an image, the image zooms in. The user can then move to the next picture with either the left or the right buttons and that picture will be zoomed. By clicking the picture again, the current image will then zoom out.
