@@ -14,25 +14,29 @@ $('.photos')
     });
 
 
-// I need to have the left button change to
-// the picture on the left of current image.
+// I need to have the buttons change the picture
+// towards the left/right of current image.
 $('.previous')
-    .on('click', function moveLeft() {
-      // console.log('click');
+    .on('click', function moveLeft(event) {
+      event.stopPropagation();
 
-      $(this).parent().parent().previous('li')
-      .toggleClass ('zoomed')
-      .append($ ('nav') )
+      $(this).parent().parent()
+        .removeClass('zoomed')
+        .prev('li')
+          .addClass('zoomed')
+          .append($('nav') )
 
     });
 
 
 $('.next')
       .on('click', function moveRight() {
-      // console.log('click');
+        event.stopPropagation();
 
-      $(this).parent().parent().next('li')
-      .toggleClass ('zoomed')
+      $(this).parent().parent()
+      .removeClass('zoomed')
+      .next('li')
+      .addClass ('zoomed')
       .append($ ('nav') )
 
     });
