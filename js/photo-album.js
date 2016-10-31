@@ -7,11 +7,16 @@ $('.photos')
     .find('li')
     .on('click', function zoom() {
       console.log('click');
+
       $(this).toggleClass('zoomed')
       $('main').toggleClass('zooming')
+      $(this).append($ ('nav') );
     })
 
-$('.')
+
+
+
+
 
 
 })();
